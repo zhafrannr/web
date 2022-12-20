@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #E5D3B3;
+}
+/* style nav */
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+header{ 
+    height: 100vh;
+}
+
+.navigation{
+    padding: 10px 0 10px 0;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1) h1{
+    font-size: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 0 10px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover:after{
+    width: 100%;
+}
+/* style nav */
